@@ -115,7 +115,7 @@ function setDisplay(displayNum) {
     // Comprobar si el número excede 2^30
     const limit = Math.pow(2, 30);
     if (parseFloat(displayNum) > limit) {
-        alert(`Error: Number exceeds the limit of ${limit}. Reiniciando.`); // Mensaje de error
+        alert(`Error: Number exceeds the limit of ${limit}. Resetting...`); // Mensaje de error
         clear(); // Reinicia la calculadora
         return; // Salimos de la función
     }
