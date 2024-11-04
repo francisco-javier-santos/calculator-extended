@@ -29,10 +29,10 @@ function operate(a, operator, b) {
     if (operator == '+') {
         return add(a, b) 
     }
-    else if (operator == '—') {
+    else if (operator == '-') {
         return subtract(a, b)
     }
-    else if (operator == 'X') {
+    else if (operator == 'x') {
         return multiply(a, b) 
     }
     else if (operator == '/') {
@@ -201,7 +201,7 @@ document.addEventListener('keydown', function(event) {
     else if (key === 'Escape') {
         clear(); // Limpia todo con 'Escape'
     }
-    else if (['+', '-', '*', '/'].includes(key)) {
+    else if (['+', '-', 'x', '/'].includes(key)) {
         storeCalc(key);
     }
 });
